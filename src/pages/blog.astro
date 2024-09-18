@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+const posts = await getCollection("posts");
+console.log(posts)
+
+---
+<Layout title="Blog">
+    <div class="flex justify-center p-5">
+        <span>Post: </span>
+        {
+            posts.map((post: any) => {
+                return(
+                    <div>
+                        <strong>{post.data.title}</strong> 
+                    </div>
+                )
+            }
+        
+            )
+        
+        }
+    </div>
+    
+</Layout>
+
