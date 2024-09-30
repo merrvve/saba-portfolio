@@ -1,4 +1,13 @@
 <style>
+  .ct-container {
+    background: url("/img/about-top-right.svg") no-repeat;
+    background-position: 85% 20%;
+  }
+  .border-top-right {
+    border-top: black;
+    border-right: black;
+    border-radius: 25%;
+  }
   .type1 {
     font-family: Inter;
     font-size: 60px;
@@ -117,28 +126,46 @@
     color: #f4511e;
   }
 </style>
-<section>
-  <div class="scroll-animation flex">
-    <p class="p-5">
-      <span class="type1">hello</span>
-      <span class="type2">, I am</span>
-      <span class="type3"> Saba,</span>
-      <span class="type4"> an </span>
-      <span class="type5"> industrial d</span>
-      <span class="type6">esign </span>
-      <br />
-      <span class="type2">student from Turkey </span>
-      <span class="type7">with a </span>
-      <span class="type8">pas</span>
-      <span class="type6">sion</span>
-      <br />
-      <span class="type9">for </span>
-      <span class="type10">creating </span>
-      <span class="type11">innov</span>
-      <span class="type7">ative and </span>
-      <br />
-      <span class="type12">thoughtful </span>
-      <span class="type13">designs.</span>
-    </p>
-  </div>
+<section class="flex flex-col ct-container relative">
+  
+    <div class="p-5 flex justify-end">
+      <div>
+        <p class="mx-10 pt-28 pr-48">
+          <span class="type1 scroll-animation swing-in-left">hello</span>
+          <span class="type2 scroll-animation swing-in-left delay-150">, I am</span>
+          <span class="type3 scroll-animation swing-in-left delay-300"> Saba,</span>
+          <span class="type4 scroll-animation swing-in-left delay-300"> an </span>
+          <span class="type5 scroll-animation swing-in-left delay-450"> industrial d</span>
+          <span class="type6 scroll-animation swing-in-left delay-600">esign </span>
+          <br />
+          <span class="type2 scroll-animation swing-in-left delay-750">student from Turkey </span>
+          <span class="type7 scroll-animation swing-in-left delay-750">with a </span>
+          <span class="type8 scroll-animation swing-in-left delay-900">pas</span>
+          <span class="type6 scroll-animation swing-in-left delay-900">sion</span>
+          <br />
+          <span class="type9 scroll-animation swing-in-left delay-900">for </span>
+          <span class="type10 scroll-animation swing-in-left delay-900">creating </span>
+          <span class="type11 scroll-animation swing-in-left delay-1050">innov</span>
+          <span class="type7 scroll-animation swing-in-left delay-1050">ative and </span>
+          <br />
+          <span class="type12 scroll-animation swing-in-left delay-1050">thoughtful </span>
+          <span class="type13 scroll-animation swing-in-left delay-1050">designs.</span>
+        </p>
+      </div>
+      
+    </div>
+    <h1 class="p-5 font-extrabold text-5xl absolute bottom-28 left-0 -rotate-90 border-b-4 border-r-4 border-solid rounded-xl">About Me</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="py-24 pl-80 items-center">
+        <p class="w-1/2 text-balance scroll-animation scroll-animation-default delay-1050">
+          I’m Saba Şen
+I’m a passionate product designer, combining aesthetics and functionality to offer unique solutions for each project. I’m ready to bring your ideas to life with my creative processes.
+Explore and get inspired.
+        </p>
+      </div>
+      <div>
+        resim
+      </div>
+    </div>
+  
 </section>
