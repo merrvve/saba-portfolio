@@ -36,7 +36,9 @@ export const LeftBottom = () => {
       
       </motion.svg>
       <motion.h1 className="p-0 font-bold text-6xl absolute bottom-56 -left-5 -rotate-90"
-      
+      initial={{ opacity: 0  }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay:1 }}
       >
         About Me
       </motion.h1>
