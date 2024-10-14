@@ -1,13 +1,11 @@
+---
+import { TopRight } from "./AboutMotion/TopRight";
+import { LeftBottom } from "./AboutMotion/LeftBottom";
+---
+
+
 <style>
-  .ct-container {
-    background: url("/img/about-top-right.svg") no-repeat;
-    background-position: 85% 20%;
-  }
-  .border-top-right {
-    border-top: black;
-    border-right: black;
-    border-radius: 25%;
-  }
+ 
   .type1 {
     font-family: Inter;
     font-size: 60px;
@@ -126,12 +124,16 @@
     color: #f4511e;
   }
 </style>
-<section class="flex flex-col ct-container relative">
-  
-    <div class="p-5 flex justify-end">
-      <div>
-        <p class="mx-10 pt-28 pr-48">
-          <span class="type1 scroll-animation swing-in-left">hello</span>
+<section class="flex flex-col relative">
+    <div class="absolute md:top-4 md:right-4 top-2 right-0">
+      <TopRight client:load />
+    </div>
+    <div class="hidden md:block absolute bottom-4 left-6">
+      <LeftBottom client:load />
+    </div>
+    <div class="p-1 flex  justify-end">
+     <p class="mr-20 mt-20 ml-2">
+      <span class="type1 scroll-animation swing-in-left">hello</span>
           <span class="type2 scroll-animation swing-in-left delay-150">, I am</span>
           <span class="type3 scroll-animation swing-in-left delay-300"> Saba,</span>
           <span class="type4 scroll-animation swing-in-left delay-300"> an </span>
@@ -150,21 +152,24 @@
           <br />
           <span class="type12 scroll-animation swing-in-left delay-1050">thoughtful </span>
           <span class="type13 scroll-animation swing-in-left delay-1050">designs.</span>
-        </p>
+     </p>
+    
+     
       </div>
       
     </div>
-    <h1 class="p-5 font-extrabold text-5xl absolute bottom-28 left-0 -rotate-90 border-b-4 border-r-4 border-solid rounded-xl">About Me</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <div class="py-24 pl-80 items-center">
-        <p class="w-1/2 text-balance scroll-animation scroll-animation-default delay-1050">
+    <div class="flex flex-col md:flex-row items-center justify-end gap-64 py-10 pr-16 px-1">
+      <div class="flex justify-end">
+        <div class="p-2 md:w-[20rem] text-balance scroll-animation scroll-animation-default delay-1050">
           I’m Saba Şen
 I’m a passionate product designer, combining aesthetics and functionality to offer unique solutions for each project. I’m ready to bring your ideas to life with my creative processes.
 Explore and get inspired.
-        </p>
+        </div>
       </div>
-      <div>
-        resim
+      <div class="p-2 scroll-animation scroll-animation-default delay-900">
+        <svg width="250" height="337" viewBox="0 0 250 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="250" height="337" rx="24" fill="#D9D9D9"/>
+          </svg>
       </div>
     </div>
   
