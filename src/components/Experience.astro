@@ -2,20 +2,20 @@
 import { ExpBottom } from "./AboutMotion/ExpBottom";
 import { SkillsBottom } from "./AboutMotion/SkillsBottom";
 ---
-
-<section class="flex flex-col relative h-screen">
-    <div class="ml-72">
+:
+<section class="flex flex-col gap-2 relative h-screen">
+    <div class="md:ml-72">
         <h1 class="font-bold text-3xl italic scroll-animation scroll-animation-default delay-300">Experience</h1>
     </div>
     
-    <div class="mt-3">
+    <div class="mt-3 hidden md:block">
         <ExpBottom client:load/>
     </div>
-    <div class="flex justify-end mr-52 -mt-12">
+    <div class="flex justify-end md:mr-52 md:-mt-12">
         <h1 class="font-bold text-3xl italic scroll-animation scroll-animation-default delay-300">Awards & Exhibitions</h1>
     </div>
     
-    <div class="absolute bottom-3 left-40">
+    <div class="absolute bottom-3 left-40 hidden md:block">
         <SkillsBottom client:load/>
     </div>
 </section>
