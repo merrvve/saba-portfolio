@@ -29,13 +29,13 @@ const navLinks = [
                 {
                     navLinks.map((navLink)=> {
                         return (
-                            <a class="p-1 mx-2 rounded text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 decoration-slate-500 transition duration-300" href={navLink.link}>{navLink.name}</a>
+                            <a class="p-1 mx-2 rounded text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 decoration-slate-500 transition-all duration-500 delay-150" href={navLink.link}>{navLink.name}</a>
                         )
                     }
     
                     )
                 }
-                <button class="rounded-lg ml-3 p-2 bg-black text-white hover:bg-slate-800 transition duration-150">
+                <button class="rounded-lg ml-3 p-2 bg-black text-white hover:bg-slate-800 transition duration-500">
                     <span class="m-1">
                         Download CV
                     </span>
@@ -46,7 +46,7 @@ const navLinks = [
                 </button>
                 
             </div>
-            <div class="block md:hidden cursor-pointer rounded p-2 transition duration-300 hover:bg-slate-300">
+            <div class="block md:hidden cursor-pointer rounded p-2 transition duration-500 hover:bg-slate-300">
                 <svg class="w-[1.25rem] inline " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
             </div>
         </div>
